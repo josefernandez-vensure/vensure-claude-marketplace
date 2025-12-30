@@ -1,0 +1,12 @@
+{
+  "name": "vensure-claude-marketplace",
+  "owner": {
+    "name": "Jose Fernandez",
+    "email": "jose.fernandez@vensure.com"
+  },
+  "metadata": {
+    "description": "Skills, workflows, and productivity tools",
+    "version": "1.0.0"
+  },
+  "plugins": []
+}
