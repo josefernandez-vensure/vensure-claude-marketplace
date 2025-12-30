@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Plugin Manifest Schema",
+  "type": "object",
+  "required": ["id", "name", "version", "description", "author", "skills", "commands", "agents", "hooks", "mcp", "lsp"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique plugin identifier (required)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name of the plugin (required)"
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version (required)",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief description of the plugin (required)"
+    },
+    "author": {
+      "type": "object",
+      "description": "Plugin author information (required)",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string", "description": "Author name (required)" },
+        "email": { "type": "string", "description": "Author email (optional)" },
+        "url": { "type": "string", "description": "Author website (optional)" }
+      }
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX license identifier (optional)",
+      "default": "MIT"
+    },
+    "repository": {
+      "type": "string",
+      "description": "Repository URL (optional)"
+    },
+    "homepage": {
+      "type": "string",
+      "description": "Plugin homepage URL (optional)"
+    },
+    "bugs": {
+      "type": "string",
+      "description": "Issue tracker URL (optional)"
+    },
+    "keywords": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Search keywords (optional)"
+    },
+    "categories": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Plugin categories for marketplace (optional)"
+    },
+    "engines": {
+      "type": "object",
+      "description": "Compatibility requirements (optional)",
+      "properties": {
+        "claude-code": { "type": "string", "description": "Claude Code version range" }
+      }
+    },
+    "dependencies": {
+      "type": "object",
+      "description": "Plugin dependencies (optional)",
+      "additionalProperties": { "type": "string" }
+    },
+    "skills": {
+      "type": "array",
+      "description": "Skill definitions (required, can be empty)"
+    },
+    "commands": {
+      "type": "array",
+      "description": "Command definitions (required, can be empty)"
+    },
+    "agents": {
+      "type": "array",
+      "description": "Agent definitions (required, can be empty)"
+    },
+    "hooks": {
+      "type": "array",
+      "description": "Hook definitions (required, can be empty)"
+    },
+    "mcp": {
+      "type": "array",
+      "description": "MCP server definitions (required, can be empty)"
+    },
+    "lsp": {
+      "type": "array",
+      "description": "LSP server definitions (required, can be empty)",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "language"],
+        "properties": {
+          "id": { "type": "string", "description": "Unique LSP identifier (required)" },
+          "name": { "type": "string", "description": "Display name (required)" },
+          "language": { "type": "string", "description": "Language identifier (required)" },
+          "enabled": { "type": "boolean", "description": "Enable by default (optional)", "default": true },
+          "config": { "type": "object", "description": "LSP configuration (optional)" }
+        }
+      }
+    }
+  }
+}

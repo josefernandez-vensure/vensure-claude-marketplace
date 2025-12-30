@@ -1,0 +1,27 @@
+{
+  "$schema": "../.claude-plugin/plugin.schema.json",
+  "id": "dev-assist",
+  "name": "Dev Assist",
+  "version": "1.0.0",
+  "description": "Development assistance tools including skills, commands, agents, and hooks",
+  "author": {
+    "name": "Jose Fernandez"
+  },
+  "skills": [],
+  "commands": [],
+  "agents": [],
+  "hooks": [],
+  "mcp": [],
+  "lsp": [
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "language": "typescript"
+    },
+    {
+      "id": "csharp",
+      "name": "C#",
+      "language": "csharp"
+    }
+  ]
+}

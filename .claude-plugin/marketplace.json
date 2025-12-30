@@ -8,5 +8,5 @@
     "description": "Skills, workflows, and productivity tools",
     "version": "1.0.0"
   },
-  "plugins": []
+  "plugins": ["dev-assist"]
 }
