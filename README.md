@@ -15,7 +15,7 @@ Curated Claude Code plugin marketplace with productivity tools, skills, and work
 #### 1. Add the Marketplace
 
 ```shell
-/plugin marketplace add Vensure-Devops-QA/vensure-claude-marketplace
+/plugin marketplace add josefernandez-vensure/vensure-claude-marketplace
 ```
 
 #### 2. Install a Plugin
@@ -56,7 +56,7 @@ If you prefer to install plugins manually:
 #### 1. Clone the Repository
 
 ```shell
-git clone https://github.com/Vensure-Devops-QA/vensure-claude-marketplace.git
+git clone https://github.com/josefernandez-vensure/vensure-claude-marketplace.git
 ```
 
 #### 2. Copy Plugin Components
