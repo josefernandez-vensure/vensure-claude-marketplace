@@ -8,5 +8,12 @@
     "description": "Skills, workflows, and productivity tools",
     "version": "1.0.0"
   },
-  "plugins": ["dev-assist"]
+  "plugins": [
+    {
+      "name": "dev-assist",
+      "source": "./plugins/dev-assist",
+      "description": "Development assistance tools including agents, commands, hooks, MCP, and LSP",
+      "version": "1.0.0"
+    }
+  ]
 }
