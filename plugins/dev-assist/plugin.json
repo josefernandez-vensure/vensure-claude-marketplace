@@ -1,27 +1,9 @@
 {
-  "$schema": "../.claude-plugin/plugin.schema.json",
-  "id": "dev-assist",
-  "name": "Dev Assist",
+  "name": "dev-assist",
   "version": "1.0.0",
-  "description": "Development assistance tools including skills, commands, agents, and hooks",
+  "description": "Development assistance tools including agents, commands, hooks, MCP, and LSP",
   "author": {
-    "name": "Jose Fernandez"
-  },
-  "skills": [],
-  "commands": [],
-  "agents": [],
-  "hooks": [],
-  "mcp": [],
-  "lsp": [
-    {
-      "id": "typescript",
-      "name": "TypeScript",
-      "language": "typescript"
-    },
-    {
-      "id": "csharp",
-      "name": "C#",
-      "language": "csharp"
-    }
-  ]
+    "name": "Jose Fernandez",
+    "email": "jose.fernandez@vensure.com"
+  }
 }
